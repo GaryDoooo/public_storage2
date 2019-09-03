@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for f in *.csv; do
+	sed -n '16,375p' $f > $f.cut
+done
